@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  background-image: url(../Imgs/darth-vader-violin-lightsaber-amoled-black-background-3840x2160-4953.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+:root {
+  --font-size: 2.5rem;
+  --background-Main-Title: rgb(250, 168, 168);
+  --gap : 0.8rem;
+}
+
+/* home-section */
+
+.home-sec {
+  text-align: center;
+  color: var(--background-Main-Title);
+}
+
+.home-sec .HeadOfPage h1 {
+  font-size: var(--font-size);
+}
+
+.home-sec .ImgsOfGallery{
+  display: flex;
+  gap: var(--gap);
+}
+.home-sec .ImgsOfGallery .imgsGs{
+  display: flex;
+  width: 25%;
+  height: 75vh;
+  transition: all 0.55s;
+}
+.home-sec .ImgsOfGallery .imgsGs img{
+  width:100%;
+  cursor: pointer;
+  border-top-left-radius: 40%;
+  object-fit: cover;
+  border-bottom-right-radius: 40%;
+  border-top-right-radius: 3%;
+  box-shadow: 3px 15px 10px rgb(189, 71, 71);
+
+}
+.home-sec .ImgsOfGallery .imgsGs:hover{
+width: 100%;
+height: auto;
+
+}
+/* slider-section */
+
+.slider-sec {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider-sec .ContentOfSec {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slider-sec .ContentOfSec .img-d {
+  position: relative;
+  margin-top: 6.5rem;
+  overflow: hidden;
+  border-radius: 25%;
+}
+
+
+.slider-sec .ContentOfSec .img-d img {
+  width: 100%;
+  border-radius: 40%;
+  transition: all 0.6s;
+}
+.slider-sec .ContentOfSec .img-d img:hover {
+ transform: scale(1.01);
+ box-shadow: 3px 15px 10px rgba(155, 53, 53,0.6);
+
+}
+.slider-sec .ContentOfSec .right-arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  color:rgb(80, 22, 22);
+}
+
+.slider-sec .ContentOfSec .left-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  cursor: pointer;
+  color:rgb(80, 22, 22);
+}
